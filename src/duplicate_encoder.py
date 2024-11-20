@@ -15,11 +15,4 @@ Examples
 def encode(word):
     word = word.casefold()
     
-    encodedInput = ""
-    for caracter in word:
-        if word.count(caracter) == 1:
-            encodedInput += "("
-        else:
-            encodedInput += ")"
-            
-    return encodedInput
+    return "".join("(" if word.count(character) == 1 else ")" for character in word)
