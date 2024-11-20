@@ -12,3 +12,6 @@ Examples
 "(( @"     =>  "))((" 
 '''
 
+def encode(word):
+    #My code here
+    pass

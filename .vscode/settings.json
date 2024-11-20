@@ -3,5 +3,7 @@
         "README",
         "KATA",
         "PYTEST"
-    ]
+    ],
+    "python.analysis.inlayHints.pytestParameters": false,
+    "python.testing.pytestEnabled": false
 }
