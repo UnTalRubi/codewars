@@ -13,5 +13,13 @@ Examples
 '''
 
 def encode(word):
-    #My code here
-    pass
+    word = word.casefold()
+    
+    encodedInput = ""
+    for caracter in word:
+        if word.count(caracter) == 1:
+            encodedInput += "("
+        else:
+            encodedInput += ")"
+            
+    return encodedInput
