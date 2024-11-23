@@ -12,3 +12,4 @@ This repository will contain my codewars exercises (also known as Katas) with it
 
 - Duplicate Encoder
 - Sum of Arrays Singles
+- Move Zeros to End
