@@ -9,3 +9,14 @@ unique_in_order([1, 2, 2, 3, 3])   == [1, 2, 3]
 unique_in_order((1, 2, 2, 3, 3))   == [1, 2, 3]
 '''
 
+def unique_in_order(sequence):
+    list_sequence = list(sequence)
+    
+    position = 1
+    while position < len(list_sequence):
+        if list_sequence[position] == list_sequence[position - 1]:
+            list_sequence.pop(position)
+        else:
+            position += 1
+        
+    return list_sequence
