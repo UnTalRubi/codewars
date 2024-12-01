@@ -8,5 +8,7 @@ elements can be duplicated;
 in case of duplicates, just return them according to the original order (see third example for more clarity).
 '''
 def first_n_smallest(arr, n):
-    #My code here
-    pass
+    arr = arr[::-1]
+    while len(arr) > n:
+        arr.remove(max(arr))
+    return arr[::-1]
